@@ -4,6 +4,8 @@ import Skin from './model/Skin';
 
 import {distanceInWords} from 'date-fns'
 
+import './PlayerInfo.css';
+
 export interface IPlayerData {
     "name": string,
     "lastOnline": number,

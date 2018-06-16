@@ -17,9 +17,9 @@ export default class Players extends React.Component<{}, {players: IPlayerData[]
     }
     
     public render() {
-        return <div>
+        return <div className="players">
                 {this.state.players
-                    .sort((a, b) => a.lastOnline - b.lastOnline)
+                    .sort((a, b) => b.lastOnline - a.lastOnline)
                     .map(player => <PlayerInfo {...player} key={player.UUID}/>)}
                </div>
       }
