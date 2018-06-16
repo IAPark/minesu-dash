@@ -2,7 +2,7 @@
 export default class MinecraftServer {
     private getter: () => Promise<Response>;
 
-    public constructor(getter=()=>fetch("http://minesu.isaacpark.me/")) {
+    public constructor(getter=()=>fetch("https://minesu.isaacpark.me/")) {
         this.getter = getter;
     }
 
